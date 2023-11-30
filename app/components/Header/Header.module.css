@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 12rem;
+  position: relative;
+}
+
+.main-nav-logo {
+  height: 2.2rem;
+  width: auto;
+}
+
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  cursor: pointer;
+  gap: 5rem;
+}
