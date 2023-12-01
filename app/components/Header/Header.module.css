@@ -1,8 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 12rem;
+  padding: 3.1rem 12rem;
   position: relative;
+  border-bottom: 2px solid #333;
 }
 
 .main-nav-logo {
@@ -15,4 +16,34 @@
   display: flex;
   cursor: pointer;
   gap: 5rem;
+  font-family: "Montserrat";
+}
+
+.main-nav-list-item a:link,
+.main-nav-list-item a:visited {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+}
+
+.main-nav-list-item a:hover,
+.main-nav-list-item a:active {
+  color: #cf711f;
+}
+
+.main-nav-list-item-button a:link,
+.main-nav-list-item-button a:visited {
+  color: var(--vampire_black);
+  padding: 1.6rem 2.4rem;
+  background-color: var(--energy_orange);
+  border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+.main-nav-list-item-button a:hover,
+.main-nav-list-item-button a:active {
+  background-color: #cf711f;
 }

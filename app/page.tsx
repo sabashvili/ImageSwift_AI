@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
-import Header from "./components/Header/Header";
+import HomePage from "./components/HomePage/HomePage";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <HomePage />
     </>
   );
 }
