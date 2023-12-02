@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Rubik:wght@400;500;600;700&display=swap");
 
 :root {
   --energy_orange: #ff9431;
@@ -24,8 +25,7 @@ html {
 }
 
 body {
-  background: url("/Images/background-image.png"),
-    -458.679px -391.285px / 159.375% 28.417% no-repeat, var(--vampire_black);
+  background: url("/Images/background-image.png"), -458.679px -391.285px / 159.375% 28.417% no-repeat, var(--vampire_black);
   background-size: auto;
 }
 

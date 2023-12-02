@@ -4,11 +4,21 @@
   padding: 3.1rem 12rem;
   position: relative;
   border-bottom: 2px solid #333;
+  align-items: center;
 }
 
 .main-nav-logo {
   height: 2.2rem;
   width: auto;
+}
+
+.main-nav-header {
+  color: var(--energy_orange);
+  font-family: "Bad Script";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
 }
 
 .main-nav-list {
@@ -19,14 +29,18 @@
   font-family: "Montserrat";
 }
 
+.main-nav-list-item {
+  display: flex;
+  align-items: center;
+}
+
 .main-nav-list-item a:link,
 .main-nav-list-item a:visited {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  display: block;
 }
 
 .main-nav-list-item a:hover,
@@ -41,6 +55,7 @@
   background-color: var(--energy_orange);
   border-radius: 5rem;
   transition: all 0.3s;
+  display: inline-block;
 }
 
 .main-nav-list-item-button a:hover,

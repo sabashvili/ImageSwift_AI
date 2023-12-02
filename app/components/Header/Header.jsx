@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import mainLogo from "../../../public/Images/main-logo.png";
@@ -7,11 +8,7 @@ function Header() {
   return (
     <header className={classes.header}>
       <a href="/">
-        <Image
-          className={classes["main-nav-logo"]}
-          src={mainLogo}
-          alt="company name and logo"
-        />
+        <h1 className={classes["main-nav-header"]}>ImageSwift AI</h1>
       </a>
       <nav className={classes["main-nav"]}>
         <ul className={classes["main-nav-list"]}>
@@ -31,9 +28,7 @@ function Header() {
             <a href="/">Contact</a>
           </li>
 
-          <li
-            className={`${classes["main-nav-list-item"]} ${classes["main-nav-list-item-button"]}`}
-          >
+          <li className={`${classes["main-nav-list-item"]} ${classes["main-nav-list-item-button"]}`}>
             <a href="/">Try Your First Creation!</a>
           </li>
         </ul>
