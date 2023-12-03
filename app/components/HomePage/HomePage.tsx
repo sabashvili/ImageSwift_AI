@@ -1,14 +1,20 @@
 "use client";
 import classes from "./HomePage.module.css";
 import "../../globals.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function HomePage() {
-  const [selectedTag, setSelectedTag] = useState("");
+  const [selectedTag, setSelectedTag]: any = useState("");
 
   const explainInputChangeHandler = (e: any) => {
     // console.log(e.target.value);
   };
+
+  const homePageInputRef: any = useRef();
+
+  useEffect(() => {
+    homePageInputRef.current.value = selectedTag;
+  }, [selectedTag]);
 
   const selectTagClickHandler = (e: any) => {
     setSelectedTag(e.target.innerHTML);
@@ -25,7 +31,7 @@ function HomePage() {
             placeholder="Explain what you want or use the following tags"
             type="text"
             onChange={explainInputChangeHandler}
-            value={selectedTag}
+            ref={homePageInputRef}
           />
           <button>Create</button>
           <ul>
