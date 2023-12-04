@@ -72,7 +72,7 @@
 }
 
 .qualitie-icon-container {
-  padding: 33px 33px 32px 32px;
+  padding: 3.3rem 3.3rem 3.3rem 3.3rem;
   border-radius: 50%;
   border: 1px dashed var(--MAIN, #41b537);
   background: radial-gradient(
@@ -86,7 +86,7 @@
   box-sizing: content-box;
   width: 7rem;
   height: 7rem;
-  padding: 33px 33px 32px 32px;
+  padding: 3.3rem 3.3rem 3.3rem 3.3rem;
   border-radius: 50%;
   border: 1px dashed var(--MAIN, #41b537);
   background: radial-gradient(
@@ -116,4 +116,109 @@
   line-height: 1.4;
   text-transform: capitalize;
   grid-column: 2;
+}
+
+.captivatin-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10rem;
+}
+
+.captivatin-img {
+  width: 85%;
+  border-radius: 5rem;
+}
+
+.captivatin-img-text {
+  color: var(--ghost_white);
+  font-family: Montserrat;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: capitalize;
+  align-self: center;
+}
+
+.captivatin-img-text span {
+  color: var(--energy_orange);
+  font-family: "Bad Script";
+  font-weight: bold;
+}
+
+.statistics {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.statistics span {
+  display: inline-block;
+  color: var(--ghost_white);
+  font-family: Montserrat;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 4.5rem 2.5rem;
+  border-radius: 100px;
+  border: 1px dashed var(--sonic_sliver);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(41, 157, 31, 0.2) 0%,
+    rgba(41, 157, 31, 0) 100%
+  );
+}
+
+.statistic p {
+  color: var(--ghost_white);
+  font-family: Montserrat;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.comment-by-ceo {
+  margin-top: 10rem;
+}
+
+.comment-by-ceo h1 {
+  color: var(--sonic_sliver);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.ceo-information {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.ceo-information h3 {
+  color: var(--ghost_white);
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.ceo-information h4 {
+  color: var(--ghost_white);
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.ceo-profile-photo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100px;
+  margin-right: 2rem;
 }

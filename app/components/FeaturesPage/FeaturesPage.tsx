@@ -15,6 +15,8 @@ import qualities_icon_1 from "../../../public/Icons/qualities_icon_1.svg";
 import qualities_icon_2 from "../../../public/Icons/qualities_icon_2.svg";
 import qualities_icon_3 from "../../../public/Icons/qualities_icon_3.svg";
 import qualities_icon_4 from "../../../public/Icons/qualities_icon_4.svg";
+import captivatingImage from "../../../public/Images/GeneratedImagesExamples/Rectangle 1.jpg";
+import demetreProfilePhoto from "../../../public/Images/demetre_tetunashvili_profile_photo.jpg";
 
 function FeaturesPage() {
   return (
@@ -179,6 +181,54 @@ function FeaturesPage() {
             />
             <h1>Artistry</h1>
             <p>This is our most fundamental principle of work.</p>
+          </div>
+        </div>
+        <div className={classes["captivatin-img-container"]}>
+          <Image
+            className={classes["captivatin-img"]}
+            src={captivatingImage}
+            alt="eye in the hand"
+          ></Image>
+          <h3 className={classes["captivatin-img-text"]}>
+            The Most Captivating Image EVER Crafted, from{" "}
+            <span>ImageSwift AI </span>
+            Perspective.
+          </h3>
+        </div>
+        <div className={classes.statistics}>
+          <div className={classes.statistic}>
+            <span>+651</span>
+            <p>Creators</p>
+          </div>
+          <div className={classes.statistic}>
+            <span>+935</span>
+            <p>Creations</p>
+          </div>
+          <div className={classes.statistic}>
+            <span>+875</span>
+            <p>Reviews</p>
+          </div>
+          <div className={classes.statistic}>
+            <span>+999</span>
+            <p>Stars</p>
+          </div>
+        </div>
+        <div className={classes["comment-by-ceo"]}>
+          <h1>
+            "We envisioned the magic of turning dreams into reality, of
+            transforming the most fantastical visions into tangible works of
+            art."
+          </h1>
+          <div className={classes["ceo-information"]}>
+            <Image
+              className={classes["ceo-profile-photo"]}
+              src={demetreProfilePhoto}
+              alt="demetre tetunashvili profile photo"
+            />
+            <div>
+              <h3>Demetre Tetunashvili</h3>
+              <h4>CEO of ImageSwift AI</h4>
+            </div>
           </div>
         </div>
       </div>

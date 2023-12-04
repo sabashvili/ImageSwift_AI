@@ -33,7 +33,7 @@
 }
 
 .home-page-input-container button {
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0px 5rem 5rem 0px;
   background: var(--energy_orange);
   display: flex;
   border: none;
@@ -46,8 +46,15 @@
   font-family: Montserrat;
   font-size: 2.2rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
+
+  cursor: pointer;
+}
+
+.home-page-input-container button:hover,
+.home-page-input-container button:active {
+  background-color: #cf711f;
 }
 
 .home-page-input-container ul {
