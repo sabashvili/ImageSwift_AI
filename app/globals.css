@@ -25,7 +25,8 @@ html {
 }
 
 body {
-  background: url("/Images/background-image.png"), -458.679px -391.285px / 159.375% 28.417% no-repeat, var(--vampire_black);
+  background: url("/Images/background-image.png"),
+    -458.679px -391.285px / 159.375% 28.417% no-repeat, var(--vampire_black);
   background-size: auto;
 }
 
@@ -60,5 +61,25 @@ a {
   line-height: 1.5;
   text-transform: capitalize;
 }
-/* .header-tertiary {
-} */
+
+.main-header-section {
+  color: var(--energy_orange);
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.secondary-header-section {
+  color: var(--sonic_sliver);
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
