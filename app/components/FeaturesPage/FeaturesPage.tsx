@@ -43,6 +43,7 @@ function FeaturesPage() {
               if (index < 5) {
                 return (
                   <Image
+                    key={Math.random()}
                     className={classes["generated-image"]}
                     src={pic}
                     alt="generated images"
@@ -56,6 +57,7 @@ function FeaturesPage() {
               if (index < 5) {
                 return (
                   <Image
+                    key={Math.random()}
                     className={classes["generated-image"]}
                     src={pic}
                     alt="generated images"
@@ -73,6 +75,7 @@ function FeaturesPage() {
               if (index > 4) {
                 return (
                   <Image
+                    key={Math.random()}
                     className={classes["generated-image"]}
                     src={pic}
                     alt="generated images"
@@ -86,6 +89,7 @@ function FeaturesPage() {
               if (index > 4) {
                 return (
                   <Image
+                    key={Math.random()}
                     className={classes["generated-image"]}
                     src={pic}
                     alt="generated images"

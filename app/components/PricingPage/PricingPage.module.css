@@ -1,0 +1,36 @@
+.pricing-plan-variations-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.29fr 1fr 0.29fr;
+}
+
+.billing-term {
+  display: flex;
+  justify-content: center;
+  margin: 7rem 0;
+}
+
+.billing-term-yearly {
+  border-radius: 40px 0px 0px 40px;
+  background: var(--dark_charcoal);
+  color: var(--ghost_white);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 2rem 3.2rem;
+}
+
+.billing-term-monthly {
+  border-radius: 0px 40px 40px 0px;
+  padding: 2rem 3.2rem;
+  background: var(--energy_orange);
+
+  color: var(--dark_charcoal);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
