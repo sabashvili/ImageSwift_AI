@@ -35,34 +35,66 @@ function FeaturesPage() {
   return (
     <section>
       <div className={classes["generated-images"]}>
-        <div className={`${classes["scrolling-images-container"]} ${classes.ImageBox} ${classes["scrolling-time-for-first-line"]}`}>
+        <div
+          className={`${classes["scrolling-images-container"]} ${classes.ImageBox} ${classes["scrolling-time-for-first-line"]}`}
+        >
           <div>
             {generatedImages.map((pic: string, index: any) => {
               if (index < 5) {
-                return <Image key={Math.random()} className={classes["generated-image"]} src={pic} alt="generated images" />;
+                return (
+                  <Image
+                    key={Math.random()}
+                    className={classes["generated-image"]}
+                    src={pic}
+                    alt="generated images"
+                  />
+                );
               }
             })}
           </div>
           <div>
             {generatedImages.map((pic: string, index: any) => {
               if (index < 5) {
-                return <Image key={Math.random()} className={classes["generated-image"]} src={pic} alt="generated images" />;
+                return (
+                  <Image
+                    key={Math.random()}
+                    className={classes["generated-image"]}
+                    src={pic}
+                    alt="generated images"
+                  />
+                );
               }
             })}
           </div>
         </div>
-        <div className={`${classes["scrolling-images-container"]} ${classes.ImageBox} ${classes["scrolling-time-for-second-line"]}`}>
+        <div
+          className={`${classes["scrolling-images-container"]} ${classes.ImageBox} ${classes["scrolling-time-for-second-line"]}`}
+        >
           <div>
             {generatedImages.map((pic: string, index: any) => {
               if (index > 4) {
-                return <Image key={Math.random()} className={classes["generated-image"]} src={pic} alt="generated images" />;
+                return (
+                  <Image
+                    key={Math.random()}
+                    className={classes["generated-image"]}
+                    src={pic}
+                    alt="generated images"
+                  />
+                );
               }
             })}
           </div>
           <div>
             {generatedImages.map((pic: string, index: any) => {
               if (index > 4) {
-                return <Image key={Math.random()} className={classes["generated-image"]} src={pic} alt="generated images" />;
+                return (
+                  <Image
+                    key={Math.random()}
+                    className={classes["generated-image"]}
+                    src={pic}
+                    alt="generated images"
+                  />
+                );
               }
             })}
           </div>
@@ -70,34 +102,57 @@ function FeaturesPage() {
       </div>
       <div className="sectionContainer">
         <h1 className="main-header-section">Discover Our Pinnacle Qualities</h1>
-        <h2 className="secondary-header-section">Essential Aspects That Define Us</h2>
+        <h2 className="secondary-header-section">
+          Essential Aspects That Define Us
+        </h2>
         <div className={classes["qualities-container"]}>
           <div className={classes["quality"]}>
-            <Image className={classes["quality-icon"]} src={qualities_icon_1} alt="qualities icon" />
+            <Image
+              className={classes["quality-icon"]}
+              src={qualities_icon_1}
+              alt="qualities icon"
+            />
 
             <h1>Creativity</h1>
             <p>This is where creativity reaches its zenith.</p>
           </div>
           <div className={classes["quality"]}>
-            <Image className={classes["quality-icon"]} src={qualities_icon_2} alt="qualities icon" />
+            <Image
+              className={classes["quality-icon"]}
+              src={qualities_icon_2}
+              alt="qualities icon"
+            />
             <h1>Precision</h1>
             <p>We have presented the most accurate algorithm.</p>
           </div>
           <div className={classes["quality"]}>
-            <Image className={classes["quality-icon"]} src={qualities_icon_3} alt="qualities icon" />
+            <Image
+              className={classes["quality-icon"]}
+              src={qualities_icon_3}
+              alt="qualities icon"
+            />
             <h1>Speed</h1>
             <p>Creating each image takes less than a minute.</p>
           </div>
           <div className={classes["quality"]}>
-            <Image className={classes["quality-icon"]} src={qualities_icon_4} alt="qualities icon" />
+            <Image
+              className={classes["quality-icon"]}
+              src={qualities_icon_4}
+              alt="qualities icon"
+            />
             <h1>Artistry</h1>
             <p>This is our most fundamental principle of work.</p>
           </div>
         </div>
         <div className={classes["captivatin-img-container"]}>
-          <Image className={classes["captivatin-img"]} src={captivatingImage} alt="eye in the hand"></Image>
+          <Image
+            className={classes["captivatin-img"]}
+            src={captivatingImage}
+            alt="eye in the hand"
+          ></Image>
           <h3 className={classes["captivatin-img-text"]}>
-            The Most Captivating Image EVER Crafted, from <span>ImageSwift AI </span>
+            The Most Captivating Image EVER Crafted, from{" "}
+            <span>ImageSwift AI </span>
             Perspective.
           </h3>
         </div>
@@ -120,9 +175,17 @@ function FeaturesPage() {
           </div>
         </div>
         <div className={classes["comment-by-ceo"]}>
-          <h1>"We envisioned the magic of turning dreams into reality, of transforming the most fantastical visions into tangible works of art."</h1>
+          <h1>
+            "We envisioned the magic of turning dreams into reality, of
+            transforming the most fantastical visions into tangible works of
+            art."
+          </h1>
           <div className={classes["ceo-information"]}>
-            <Image className={classes["ceo-profile-photo"]} src={demetreProfilePhoto} alt="demetre tetunashvili profile photo" />
+            <Image
+              className={classes["ceo-profile-photo"]}
+              src={demetreProfilePhoto}
+              alt="demetre tetunashvili profile photo"
+            />
             <div>
               <h3>Demetre Tetunashvili</h3>
               <h4>CEO of ImageSwift AI</h4>
