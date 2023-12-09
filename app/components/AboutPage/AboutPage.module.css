@@ -37,3 +37,11 @@
   width: 3.2rem;
   height: 3.2rem;
 }
+
+/* @media (max-width: 68em) {
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
+    padding: 0 8rem;
+  }
+} */

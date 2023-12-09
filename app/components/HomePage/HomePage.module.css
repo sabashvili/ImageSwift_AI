@@ -1,8 +1,9 @@
 .home-page-content {
+  padding-top: 15rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: calc(100vh - 11.7rem);
+  justify-content: space-evenly;
+  min-height: calc(100vh + 11.7rem);
 }
 
 .home-page-header-secondary {
@@ -76,4 +77,10 @@
   padding-bottom: 0.4rem;
   border-bottom: 0.1rem dotted var(--ghost_white);
   cursor: pointer;
+}
+
+@media (max-width: 72em) {
+  .home-page-content {
+    min-height: calc(100vh + 8.1rem);
+  }
 }

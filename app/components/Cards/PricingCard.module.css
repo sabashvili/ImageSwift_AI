@@ -68,3 +68,43 @@
   width: 2.4rem;
   height: 2.4rem;
 }
+
+@media (max-width: 75em) {
+  .pricing-card-container {
+    padding: 6rem 0 6rem 3rem;
+  }
+}
+
+@media (max-width: 69em) {
+  .pricing-card-container {
+    padding: 6rem 0 6rem 1rem;
+  }
+
+  .pricing-card-plan {
+    font-size: 2.1rem;
+  }
+
+  .pricing-card-payment {
+    font-size: 2.1rem;
+    margin-top: 1rem;
+  }
+
+  .pricing-card-payment span {
+    font-size: 3.5rem;
+  }
+
+  .list-of-conditions {
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
+    gap: 2.5rem;
+  }
+
+  .list-of-conditions li {
+    gap: 0.5rem;
+  }
+
+  .checkpoint-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

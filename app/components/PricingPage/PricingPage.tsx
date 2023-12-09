@@ -28,7 +28,7 @@ function PricingPage() {
   };
 
   return (
-    <section>
+    <section id="pricing">
       <div className="sectionContainer">
         <h1 className="main-header-section">Subscription plans and pricing</h1>
         <h2 className="secondary-header-section">Choose the plan that works for you</h2>
