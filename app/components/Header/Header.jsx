@@ -1,7 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import mainLogo from "../../../public/Images/main-logo.png";
 import classes from "./Header.module.css";
 
 function Header() {
