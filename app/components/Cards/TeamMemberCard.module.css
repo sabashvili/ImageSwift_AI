@@ -1,0 +1,23 @@
+.team-member-profile-picture {
+  width: 100%;
+  height: 35rem;
+  border-radius: 5rem 5rem 0 0;
+}
+
+.team-member-fullname {
+  color: var(--ghost_white);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.team-member-position {
+  color: var(--sonic_sliver);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}

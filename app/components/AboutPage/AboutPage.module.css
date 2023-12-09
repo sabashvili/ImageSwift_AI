@@ -1,0 +1,39 @@
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  margin-top: 7rem;
+}
+
+.social-networks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 7rem;
+}
+
+.social-icon-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-container:visited,
+.social-icon-container:link {
+  padding: 4.2rem;
+  border-radius: 100px;
+  border: 1px dashed var(--MAIN, #41b537);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(41, 157, 31, 0.2) 0%, rgba(41, 157, 31, 0) 100%);
+  display: inline-block;
+  transition: all 0.6s;
+}
+
+.social-icon-container:hover,
+.social-icon-container:active {
+  scale: 1.05;
+}
+
+.social-icon {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+}
