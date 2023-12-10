@@ -256,3 +256,84 @@
     margin-top: 3rem;
   }
 }
+
+@media (max-width: 62.5em) {
+  .statistic-number {
+    padding: 2.5rem;
+  }
+
+  .statistic-number p {
+    font-size: 2.5rem;
+  }
+
+  .comment-by-ceo h1 {
+    font-size: 2.8rem;
+  }
+
+  .ceo-information h3 {
+    font-size: 2.1rem;
+  }
+  .ceo-information h4 {
+    font-size: 1.7rem;
+  }
+
+  .quality {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr 0.2fr;
+    row-gap: 1rem;
+  }
+
+  .quality-icon {
+    grid-row: 1;
+  }
+
+  .quality h1 {
+    grid-row: 2;
+    grid-column: 1;
+    font-size: 2.5rem;
+  }
+  .quality p {
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 1.8rem;
+  }
+
+  .qualities-container {
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 55.7em) {
+  .qualities-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quality {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 4rem;
+  }
+
+  .quality-icon {
+    grid-row: 1/-1;
+    justify-self: end;
+  }
+
+  .quality h1 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .quality p {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+  }
+}
+
+@media (max-width: 55.7em) {
+  .generated-image {
+    margin-left: 5rem;
+  }
+}

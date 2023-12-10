@@ -30,10 +30,6 @@
 }
 
 @media (max-width: 68em) {
-  .team-member-container:last-child {
-    justify-self: center;
-    align-self: center;
-  }
   .team-member-profile-picture {
     width: 30rem;
     height: 30rem;
@@ -47,5 +43,13 @@
   .team-member-position {
     font-size: 2.1rem;
     margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .team-member-container:last-child {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
   }
 }

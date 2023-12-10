@@ -84,3 +84,10 @@
     min-height: calc(100vh + 8.1rem);
   }
 }
+
+@media (max-width: 62.5em) {
+  .home-page-input {
+    height: 6rem;
+    padding: 2rem 0 2rem 4.9rem;
+  }
+}
