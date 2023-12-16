@@ -114,3 +114,45 @@ a {
     font-size: 2.8rem;
   }
 }
+
+@media (max-width: 53em) {
+  .header-primary {
+    font-size: 3.7rem;
+  }
+
+  .header-secondary {
+    font-size: 2.9rem;
+  }
+
+  .main-header-section {
+    font-size: 3rem;
+  }
+  .secondary-header-section {
+    font-size: 2.3rem;
+  }
+  .sectionContainer {
+    padding: 0 2rem 13rem 2rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .header-primary {
+    font-size: 3.4rem;
+    line-height: 1.3;
+  }
+
+  .header-secondary {
+    font-size: 2.6rem;
+    line-height: 1.3;
+  }
+
+  .main-header-section {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  .secondary-header-section {
+    line-height: 1.3;
+    font-size: 2.1rem;
+  }
+}

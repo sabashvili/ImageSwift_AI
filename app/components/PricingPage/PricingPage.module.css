@@ -52,4 +52,22 @@
   .pricing-plan-variations-container {
     padding: 0;
   }
+
+  .pricing-plan-variations-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5rem;
+  }
+
+  .billing-term-monthly,
+  .billing-term-yearly {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .pricing-plan-variations-container {
+    grid-template-columns: 1fr;
+    padding: 0 10rem;
+  }
 }

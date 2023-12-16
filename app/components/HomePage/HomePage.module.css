@@ -47,7 +47,7 @@
   font-family: Montserrat;
   font-size: 2.2rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   line-height: normal;
 
   cursor: pointer;
@@ -89,5 +89,60 @@
   .home-page-input {
     height: 6rem;
     padding: 2rem 0 2rem 4.9rem;
+  }
+}
+
+@media (max-width: 53em) {
+  .home-page-input-container ul {
+    padding-left: 3rem;
+    font-size: 1.4rem;
+    gap: 1.5rem;
+  }
+
+  .home-page-input {
+    height: 5rem;
+    padding: 2.5rem 0 2.5rem 4.9rem;
+    font-size: 1.7rem;
+  }
+
+  .home-page-input-container {
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .home-page-input {
+    padding: 2.5rem 0 2.5rem 3rem;
+  }
+
+  .home-page-input-container ul {
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+
+  .home-page-content {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .home-page-input-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page-input {
+    width: 100%;
+    height: 7.3rem;
+    border-radius: 5rem 5rem 5rem 5rem;
+  }
+
+  .home-page-input-container button {
+    border-radius: 5rem 5rem 5rem 5rem;
+    width: 50%;
+    justify-self: center;
+    height: 6rem;
+    grid-row: 3;
+    margin-top: 2.5rem;
   }
 }

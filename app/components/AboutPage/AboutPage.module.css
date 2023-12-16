@@ -45,3 +45,36 @@
     padding: 0 6rem;
   }
 }
+
+@media (max-width: 44em) {
+  .team-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 40em) {
+  .social-icon-container:visited,
+  .social-icon-container:link {
+    padding: 3.3rem;
+  }
+
+  .social-icon {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .social-networks {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.5rem;
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .team-container {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    padding: 0 6rem;
+  }
+}

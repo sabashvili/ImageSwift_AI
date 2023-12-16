@@ -108,3 +108,34 @@
     height: 2rem;
   }
 }
+
+@media (max-width: 59em) {
+  .pricing-card-container {
+    grid-row: auto;
+  }
+
+  .pro-plan {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .standard-plan {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 6rem 2rem 6rem 5.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .pricing-card-container {
+    border-radius: 5rem;
+  }
+  .pro-plan {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .standard-plan {
+    grid-column: 1;
+    justify-self: auto;
+  }
+}

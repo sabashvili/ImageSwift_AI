@@ -119,7 +119,7 @@
 .captivatin-img {
   width: 80%;
   height: auto;
-  border-radius: 5rem;
+  border-radius: 20%;
 }
 
 .captivatin-img-text {
@@ -335,5 +335,46 @@
 @media (max-width: 55.7em) {
   .generated-image {
     margin-left: 5rem;
+  }
+}
+
+@media (max-width: 53em) {
+  .statistics {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6rem;
+  }
+
+  .statistic-description {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .generated-images {
+    gap: 1.7rem;
+  }
+
+  .generated-image {
+    width: 15rem;
+    height: 15rem;
+    margin-left: 4rem;
+    border-radius: 20%;
+  }
+
+  .captivatin-img-container {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .captivatin-img {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .captivatin-img-text {
+    padding: 0 2rem;
+    line-height: 1.4;
+    text-align: center;
   }
 }

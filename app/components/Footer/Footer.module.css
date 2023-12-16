@@ -43,3 +43,16 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 53em) {
+  .footer {
+    padding: 0.9rem 4rem 1.2rem 4rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+
+  .footer-company-name {
+    font-size: 1.7rem;
+  }
+}
