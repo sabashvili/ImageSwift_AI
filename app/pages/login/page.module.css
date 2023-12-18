@@ -5,7 +5,12 @@
 }
 
 .sign-page-img-box {
-  background: linear-gradient(180deg, rgba(49, 49, 49, 0.3) -4.74%, rgba(0, 0, 0, 0.55) 103.32%), url("/Images/sign-in-background-image.jpeg"),
+  background: linear-gradient(
+      180deg,
+      rgba(49, 49, 49, 0.3) -4.74%,
+      rgba(0, 0, 0, 0.55) 103.32%
+    ),
+    url('/Images/sign-in-background-image.jpeg'),
     lightgray 50% / cover no-repeat;
   display: flex;
   justify-content: center;
@@ -26,7 +31,7 @@
 
 .main-nav-header {
   color: var(--energy_orange);
-  font-family: "Bad Script";
+  font-family: 'Bad Script';
   font-size: 3.3rem;
   font-style: normal;
   font-weight: bold;

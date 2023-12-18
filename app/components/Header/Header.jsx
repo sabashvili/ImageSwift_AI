@@ -1,48 +1,50 @@
-"use client";
-import classes from "./Header.module.css";
-import { useState, useRef, useEffect } from "react";
-import { Link } from "react-scroll";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import CloseIcon from "@mui/icons-material/Close";
+'use client'
+import classes from './Header.module.css'
+import { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-scroll'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
+import CloseIcon from '@mui/icons-material/Close'
 
 function Header() {
-  const [shownMobileMenu, setShownMobileMenu] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [shownMobileMenu, setShownMobileMenu] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
-  const navBarRef = useRef();
+  const navBarRef = useRef()
 
   useEffect(() => {
     const closeNavBar = (e) => {
       if (!navBarRef.current.contains(e.target)) {
-        setShownMobileMenu(false);
+        setShownMobileMenu(false)
       }
-    };
-    document.addEventListener("mousedown", closeNavBar);
-  });
+    }
+    document.addEventListener('mousedown', closeNavBar)
+  })
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 70) {
-        setScrolled(true);
+        setScrolled(true)
       } else {
-        setScrolled(false);
+        setScrolled(false)
       }
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    }
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <header
       ref={navBarRef}
-      className={`${classes.header} ${shownMobileMenu ? classes["nav-open"] : ""} ${scrolled ? classes["scrolled-nav-bar"] : ""}`}
+      className={`${classes.header} ${
+        shownMobileMenu ? classes['nav-open'] : ''
+      } ${scrolled ? classes['scrolled-nav-bar'] : ''}`}
     >
       <a href="/">
-        <h1 className={classes["main-nav-header"]}>ImageSwift AI</h1>
+        <h1 className={classes['main-nav-header']}>ImageSwift AI</h1>
       </a>
-      <nav className={classes["main-nav"]}>
-        <ul className={classes["main-nav-list"]}>
-          <li className={classes["main-nav-list-item"]}>
+      <nav className={classes['main-nav']}>
+        <ul className={classes['main-nav-list']}>
+          <li className={classes['main-nav-list-item']}>
             <Link
               activeClass={classes.active}
               to="home"
@@ -56,7 +58,7 @@ function Header() {
               Home
             </Link>
           </li>
-          <li className={classes["main-nav-list-item"]}>
+          <li className={classes['main-nav-list-item']}>
             <Link
               activeClass={classes.active}
               to="features"
@@ -70,7 +72,7 @@ function Header() {
               Features
             </Link>
           </li>
-          <li className={classes["main-nav-list-item"]}>
+          <li className={classes['main-nav-list-item']}>
             <Link
               activeClass={classes.active}
               to="pricing"
@@ -84,7 +86,7 @@ function Header() {
               Pricing
             </Link>
           </li>
-          <li className={classes["main-nav-list-item"]}>
+          <li className={classes['main-nav-list-item']}>
             <Link
               activeClass={classes.active}
               to="about"
@@ -99,33 +101,37 @@ function Header() {
             </Link>
           </li>
 
-          <li className={`${classes["main-nav-list-item"]} ${classes["main-nav-list-item-button"]}`}>
+          <li
+            className={`${classes['main-nav-list-item']} ${classes['main-nav-list-item-button']}`}
+          >
             <a href="/">Try Your First Creation!</a>
           </li>
         </ul>
         {shownMobileMenu ? (
-          <button className={`${classes["btn-mobile-nav"]} ${classes["btn-close-position"]}`}>
+          <button
+            className={`${classes['btn-mobile-nav']} ${classes['btn-close-position']}`}
+          >
             <CloseIcon
               onClick={() => {
-                setShownMobileMenu(!shownMobileMenu);
+                setShownMobileMenu(!shownMobileMenu)
               }}
-              className={classes["menu-icon"]}
-            />{" "}
+              className={classes['menu-icon']}
+            />{' '}
           </button>
         ) : (
-          ""
+          ''
         )}
       </nav>
-      <button className={classes["btn-mobile-nav"]}>
+      <button className={classes['btn-mobile-nav']}>
         <MenuRoundedIcon
           onClick={() => {
-            setShownMobileMenu(!shownMobileMenu);
+            setShownMobileMenu(!shownMobileMenu)
           }}
-          className={classes["menu-icon"]}
+          className={classes['menu-icon']}
         />
       </button>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
