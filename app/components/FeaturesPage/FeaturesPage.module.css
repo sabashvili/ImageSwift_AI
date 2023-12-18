@@ -378,3 +378,15 @@
     text-align: center;
   }
 }
+
+@media (max-width: 31em) {
+  .captivatin-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 25em) {
+  .captivatin-img {
+    width: 75%;
+  }
+}

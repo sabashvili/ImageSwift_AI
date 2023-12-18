@@ -78,3 +78,25 @@
     padding: 0 6rem;
   }
 }
+
+@media (max-width: 31em) {
+  .social-networks {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 28em) {
+  .team-container {
+    padding: 0 3rem;
+  }
+
+  .social-networks {
+    padding: 0;
+  }
+}
+
+@media (max-width: 25em) {
+  .team-container {
+    padding: 0 0;
+  }
+}

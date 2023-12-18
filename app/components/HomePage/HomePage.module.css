@@ -146,3 +146,13 @@
     margin-top: 2.5rem;
   }
 }
+
+@media (max-width: 28em) {
+  .home-page-input-container ul {
+    flex-wrap: wrap;
+  }
+
+  .home-page-input {
+    padding: 2.5rem 0 2.5rem 2rem;
+  }
+}

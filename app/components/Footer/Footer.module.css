@@ -56,3 +56,16 @@
     font-size: 1.7rem;
   }
 }
+
+@media (max-width: 37.5em) {
+  .footer {
+    padding: 0.9rem 2rem 1.2rem 2rem;
+  }
+}
+
+@media (max-width: 28em) {
+  .footer {
+    display: block;
+    padding: 0.9rem 2rem 3rem 2rem;
+  }
+}

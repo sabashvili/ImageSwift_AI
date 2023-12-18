@@ -176,8 +176,19 @@
 }
 
 @media (max-width: 37.5em) {
-  .main-nav-list-item-button a:link,
-  .main-nav-list-item-button a:visited {
-    padding: 1.1rem 1.8rem;
+  .header .main-nav {
+    width: 70%;
+  }
+}
+
+@media (max-width: 28em) {
+  .header .main-nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 22em) {
+  .header .main-nav {
+    width: 100%;
   }
 }
