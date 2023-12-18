@@ -68,3 +68,74 @@
   width: 2.4rem;
   height: 2.4rem;
 }
+
+@media (max-width: 75em) {
+  .pricing-card-container {
+    padding: 6rem 0 6rem 3rem;
+  }
+}
+
+@media (max-width: 69em) {
+  .pricing-card-container {
+    padding: 6rem 0 6rem 1rem;
+  }
+
+  .pricing-card-plan {
+    font-size: 2.1rem;
+  }
+
+  .pricing-card-payment {
+    font-size: 2.1rem;
+    margin-top: 1rem;
+  }
+
+  .pricing-card-payment span {
+    font-size: 3.5rem;
+  }
+
+  .list-of-conditions {
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
+    gap: 2.5rem;
+  }
+
+  .list-of-conditions li {
+    gap: 0.5rem;
+  }
+
+  .checkpoint-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .pricing-card-container {
+    grid-row: auto;
+  }
+
+  .pro-plan {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .standard-plan {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 6rem 2rem 6rem 5.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .pricing-card-container {
+    border-radius: 5rem;
+  }
+  .pro-plan {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .standard-plan {
+    grid-column: 1;
+    justify-self: auto;
+  }
+}

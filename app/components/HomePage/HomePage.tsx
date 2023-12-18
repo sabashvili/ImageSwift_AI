@@ -21,7 +21,7 @@ function HomePage() {
   };
 
   return (
-    <section className={classes.homePage}>
+    <section id="home" className={classes.homePage}>
       <div className={`sectionContainer ${classes["home-page-content"]} `}>
         <h1 className={`header-primary`}>A Journey Through Imagination</h1>
         <h2 className={`header-secondary ${classes["home-page-header-secondary"]}`}>We illustrate only what you desire from your imagination!</h2>

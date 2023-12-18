@@ -39,7 +39,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <section>
+    <section id="about">
       <div className="sectionContainer">
         <h1 className="main-header-section">Get to know our team</h1>
         <h2 className="secondary-header-section">Discover more about us</h2>
